@@ -1,0 +1,220 @@
+<html lang="en">
+
+<head>
+    <link rel="icon" href="image/icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------For Bootstrap 5.3 CDN Link---------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- ----------For Javascripe 5.3 CDN Link---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- ----------For JQuery.js CDN Link---------- -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <!-- ----------Popper.js CDN Link---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <!-- ----------for Font Awesome---------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        :root {
+            --lightblue: rgb(119, 164, 229);
+            --lightorange: rgb(239, 118, 34);
+            --lightblack1: #444;
+            --lightblack2: #666;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            /* box-sizing: border-box; */
+        }
+
+        /* -----Menu----- */
+        #menu {
+            background-color: var(--lightblue);
+            padding: 0%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: white;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: var(--lightblack1);
+        }
+
+        .navbar-nav .nav-item input {
+            height: 0%;
+            border-radius: 20px;
+            text-align: left;
+            color: var(--lightblack1);
+        }
+
+        form h1 {
+            font-weight: bold;
+            font-size: 40px;
+            text-shadow: 1px 1px 2px grey;
+        }
+
+        form input {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid var(--lightblue);
+            outline: none;
+            background: none;
+            color: gray;
+            font-size: 0.8rem;
+        }
+
+        form .form-radio .choose input:hover {
+            border-bottom: none;
+        }
+
+        form input:hover {
+            border-bottom: 2px solid var(--lightblack2);
+        }
+
+        section,
+        section img,
+        section input,
+        form {
+            /* border: 2px solid red; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- for preloader -->
+    <!-- <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div> -->
+
+    <!------------Menu Bar------------>
+    <div class="navbar navbar-expand-xl w-100" id="menu">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="image/logo.png" alt="" width="25%" class="img-fluid"></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-list"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="menu-list">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tutorial">Tutorial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">About</a></li>
+                    <li class="nav-item"><input type="search" placeholder="Search" class="btn btn-light"></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log&nbsp;In</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- form section -->
+    <section class="container-fluid  w-100">
+        <div class="row">
+            <div class="col-xl-3 col-lg-12  d-flex justify-content-start align-items-end order-xl-0 order-sm-1">
+                <img class="img-fluid" src="image/signup2.png" alt="" width="100%">
+            </div>
+
+            <form class="col-xl-6 col-lg-12 px-5 py-0 d-grid row-gap-3 order-xl-1 order-sm-0"
+                style="font-size: 0.1rem;">
+                <h1 class="text-center mt-3" style="color: var(--lightblue);">Sing Up</h1>
+                <!-- inline css use -->
+                <div class="p-0" style="text-align: center; color: var(--lightblue);">
+                    <label style="font-size: 70px;" for="profile"><i class="fas fa-user-circle"></i></label>
+                    <input style="display: none;" id="profile" type="file">
+                    <p style="font-size: 20px; color: rgb(119, 164, 229)">Photo</p>
+                </div>
+
+                <!-- div inputs -->
+                <div class="d-grid row-gap-3">
+                    <input class="input" type="text" placeholder="Username" required>
+                    <input class="input" type="email" placeholder="Email ID" required>
+                    <input id="pass" class="input" type="password" placeholder="Enter password " required>
+                    <input id="pass1" class="input" type="password" placeholder="Confirm password " required>
+                </div>
+
+                <div class="d-flex">
+                    <p class="d-flex w-100">What is your date of birth? </p>
+                    <div class="d-flex gap-3">
+                        <input class="dob" type="text" placeholder="Day">
+                        <input class="dob" type="text" placeholder="Month">
+                        <input class="dob" type="text" placeholder="Year">
+                    </div>
+                </div>
+
+                <div class="form-radio d-flex gap-3">
+                    <span>Gender: &nbsp; &nbsp;</span>
+                    <div class="d-flex gap-5 ">
+                        <div class="choose">
+                            <input class="form-check-input" type="radio" id="female" name="Gender" value="Female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="choose">
+                            <input class="form-check-input" type="radio" id="male" name="Gender" value="Male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="choose">
+                            <input class="form-check-input" type="radio" id="trans." name="Gender" value="Trans.">
+                            <label class="form-check-label" for="trans.">Transgender</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-3 ">
+                    <label for="" class="form-label">Are you ?</label>
+                    <select class="form-select-sm w-25 rounded-5" name="" id=""
+                        style="background-color: var(--lightblue); color: white;">
+                        <option selected>Select</option>
+                        <option value="">Student</option>
+                        <option value="">Teacher</option>
+                    </select>
+                </div>
+
+                <div id="qualification">
+                    <input class="input" type="text" placeholder="Enter your qualification" required>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn rounded-5 text-light"
+                        style="background-color: var(--lightblue);">Submit</button>
+                </div>
+            </form>
+
+            <div class="col-xl-3 col-lg-12 px-5 order-2">
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

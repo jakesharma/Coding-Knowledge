@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- header and profile display -->
+    <header>
+        <ul class="ul_h">
+            <li class="li_h">
+                <p>Admin plean</p>
+            </li>
+            <li class="li_h">
+                <a href="">
+                    <img class="profile_admin" src="goku.jpg" alt="">
+                    <p class="admin_name">Vishal</p>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <section>
+        <div class="main">
+            <!-- menu -->
+            <div class="menu">
+                <ul class="ulelement">
+                    <li><a href="">Dashboard</a></li>
+                    <li><button onclick="show_users()" href="">
+                            <div style="display: flex;"> Users <i id="usersicon1"
+                                    class="fas fa-sort-up icon_pos_up"></i> <i id="usersicon2"
+                                    class="fas fa-sort-down icon_pos_down"></i></div>
+                        </button>
+                        <ul class="underoption" id="underuser">
+                            <li><a href="">Student</a></li>
+                            <li><a href="">Techer</a></li>
+                        </ul>
+                    </li>
+                    <li><button onclick="show_pages()" href="">
+                            <div style="display: flex;"> Pages <i id="pagesicon1"
+                                    class="fas fa-sort-up icon_pos_up"></i> <i id="pagesicon2"
+                                    class="fas fa-sort-down icon_pos_down"></i></div>
+                        </button>
+                        <ul class="underoption" id="underpage">
+                            <li><a href="">Home Page</a></li>
+                            <li><a href="">Login Page</a></li>
+                            <li><a href="">Signup Page</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Users</a></li>
+                    <li><a href="">Users</a></li>
+
+                </ul>
+            </div>
+            <div class="fream">
+                <p>Dashboard</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+<script>
+    var pages = false;
+    var users = false;
+    function show_pages() {
+        if (pages == false) {
+            document.getElementById("pagesicon1").style.display = "none"
+            document.getElementById("pagesicon2").style.display = "inline"
+            document.getElementById("underpage").style.display = "block"
+            pages = true;
+        }
+        else {
+            document.getElementById("pagesicon2").style.display = "none"
+            document.getElementById("pagesicon1").style.display = "inline"
+            document.getElementById("underpage").style.display = "none"
+            pages = false;
+        }
+    }
+    function show_users() {
+        if (users == false) {
+            document.getElementById("usersicon1").style.display = "none"
+            document.getElementById("usersicon2").style.display = "inline"
+            document.getElementById("underuser").style.display = "block"
+            users = true;
+        }
+        else {
+            document.getElementById("usersicon2").style.display = "none"
+            document.getElementById("usersicon1").style.display = "inline"
+            document.getElementById("underuser").style.display = "none"
+            users = false;
+        }
+    }
+
+</script>

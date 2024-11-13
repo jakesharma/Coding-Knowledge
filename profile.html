@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0px;
+            background-image: url(profileback.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* ------------------- */
+        /* header nevigation bar */
+        .logo_image {
+            width: 120px;
+            margin-top: -6px;
+        }
+
+        header {
+            position: sticky;
+            /* z-index: 1;
+    top: 0%; */
+        }
+
+        ul {
+            list-style-type: none;
+            font-size: 25px;
+            height: 60px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(119, 164, 229);
+            display: flex;
+            gap: 20px;
+
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+        }
+
+        .hover_color:hover {
+            color: #444;
+        }
+
+        .rigth_menu_bar {
+            margin-left: 23%;
+        }
+
+        .search {
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            margin-top: 15px;
+            height: 25px;
+            z-index: -1;
+            width: 120%;
+        }
+
+        .search_icon {
+            margin-top: 20px;
+            color: grey;
+        }
+
+        button {
+            background: none;
+            outline: none;
+            border: none;
+            margin-top: 2px;
+            margin-left: -10px;
+        }
+
+        /* --------------------------------------- */
+        /* form design */
+        section {
+            display: flex;
+        }
+
+        .center {
+            width: 100%;
+            padding-bottom: 4%;
+        }
+
+        .profile_image {
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-top: 10%;
+            border: white solid 5px;
+        }
+
+        h2 {
+            color: rgb(119, 164, 229);
+            font-size: 40px;
+            text-shadow: 1px 1px 2px grey;
+            text-align: center;
+        }
+
+        form {
+            color: #666;
+        }
+
+        .inputs_section {
+            margin-left: 110%;
+            margin-top: -60%;
+
+        }
+
+        .input {
+            border: none;
+            border-bottom: 2px solid rgb(86, 121, 149);
+            outline: none;
+            width: 400px;
+            font-size: 18px;
+            background: none;
+            display: block;
+            margin-top: 20px;
+        }
+
+        .input:hover {
+            border-bottom: 2px solid black;
+        }
+
+        .dobmain {
+            margin-top: 10px;
+            display: flex;
+            font-size: 18px;
+            justify-content: space-between;
+            width: 300px;
+        }
+
+        .dob {
+            width: 50px;
+            background: none;
+            border: none;
+            border-bottom: 2px solid rgb(86, 121, 149);
+            outline: none;
+        }
+
+        .submit {
+            background-color: rgb(119, 164, 229);
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            width: 40%;
+            margin-top: 40px;
+            margin-left: 100%;
+            border-radius: 15px;
+            box-shadow: 1px 1px 1px 1px lightslategray;
+            border: none;
+            width: 100px;
+            px;
+        }
+
+        .image {
+            width: 400px;
+            margin-top: -60%;
+            margin-left: 65%;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header and menu bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html"><img class="logo_image" src="logo.png" alt=""></a></li>
+                <li class="rigth_menu_bar"><a class="hover_color" href="#Home">Home</a></li>
+                <li><a class="hover_color" href="#Features">Features</a></li>
+                <li><a class="hover_color" href="#Tutorial">Tutorial</a></li>
+                <li><a class="hover_color" href="#about">About</a></li>
+                <li><input class="search" type="text" placeholder="Search.."></li>
+                <li><button><i class="fas fa-search search_icon"></i></button></li>
+                <li><a class="hover_color" href="login.html">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- form section -->
+    <h2>Profile</h2>
+    <section>
+        <form action="">
+            <!-- inline css use -->
+            <div style="text-align: center;color: rgb(119, 164, 229);">
+                <label for="profile"><img id="frame" class="profile_image" src="goku.jpg" alt=""></label>
+                <input style="display: none;" id="profile" type="file" onchange="preview()">
+
+                <p style="font-size: 20px; margin-right: 0%; color: rgb(119, 164, 229)">Upload</p>
+
+                <!-- div inputs -->
+                <div class="inputs_section">
+                    <input value="Narendra" class="input" type="text" placeholder="Username" required>
+                    <input value="Narendra" class="input" type="email" placeholder="Email ID" required>
+                    <input value="Narendra" id="pass" class="input" type="password" placeholder="Old password "
+                        required>
+                    <input value="Narendra" id="pass" class="input" type="password" placeholder="Enter password "
+                        required>
+                    <input value="Narendra" id="pass1" class="input" type="password" placeholder="Confirm password "
+                        required>
+                    <div class="dobmain">
+                        <p>Date of Birth: </p>
+                        <input value="20" class="dob" type="text" placeholder="Day">
+                        <input value="20" class="dob" type="text" placeholder="Month">
+                        <input value="20" class="dob" type="text" placeholder="Year">
+                    </div>
+                    <input class="submit" type="submit">
+                </div> <!-- div inputs end -->
+
+        </form>
+
+        </div>
+    </section>
+    <div>
+        <img class="image" src="profile.png" alt="">
+    </div>
+    <script>
+        function qualification() {
+            var quali = document.getElementById("select").value;
+            if (quali == "Teacher") {
+                document.getElementById("qualification").style.display = "block";
+            }
+            else {
+                document.getElementById("qualification").style.display = "none";
+            }
+        }
+        function preview() {
+            const [file] = profile.files;
+            console.log(file);
+            if (file) {
+                frame.src = URL.createObjectURL(file);
+            }
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

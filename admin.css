@@ -1,0 +1,124 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0px; 
+}
+/* ----------------------- */
+/* heading bar */
+.ul_h {
+    list-style-type: none;
+    font-size: 20px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  
+  }
+.li_h{
+      margin: 8px;
+      margin-top: -11px;
+}
+.li_h a{
+    margin-top: 0px;
+    display: flex;
+}
+.profile_admin{
+    border: 2px solid white ;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin-top: -3px;
+    margin-right: 10px;
+} 
+.admin_name{
+    margin-top: 5px;
+}
+/* -------------------------------------------- */
+/* menu */
+.main{
+    display: flex;
+    border: 1px solid black;
+    height: 100vh;
+}
+.fream{
+    margin-left: 10px;
+}
+.menu .ulelement{
+    list-style-type: none;
+    background-color: rgb(70, 70, 70);
+    width: 100px;
+    height: 100%;
+    margin-top: 1px;   
+}
+li a {
+    color: white;
+    margin-left: -30px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    padding: 16px 12px;
+    font-weight: bold;
+    text-align: left;
+}
+li button{
+    color: white;
+    margin-left: -30px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    padding: 16px 12px;
+    font-weight: bold;
+    text-align: left;
+    background: none;
+    border: none;
+}
+/* icon position */
+.icon_pos_up{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.icon_pos_down{
+    margin-top: -1px;
+    margin-left: 10px;
+}
+.underoption{
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+   margin: 8px;
+   padding: 2px;
+    font-size: 10px;
+    margin-left: -20px;
+    border-radius: 5px;
+   
+}
+.underoption li a{
+    color: black;
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    padding: 5px;
+    
+}
+/* pages menu */
+#pagesicon2{
+    display: none;
+}
+
+#underpage{
+  
+    display: none;
+}
+/* users menu */
+#usersicon2{
+    display: none;
+}
+#underuser{
+  
+    display: none;
+}
+

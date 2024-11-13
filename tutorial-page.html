@@ -1,0 +1,203 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="image/icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js.js"></script>
+    <!-- ----------For Bootstrap 5.3 CDN Link---------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- ----------For Javascripe 5.3 CDN Link---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- ----------For JQuery.js CDN Link---------- -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <!-- ----------Popper.js CDN Link---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <!-- ----------for Font Awesome---------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CodingKnowledge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+        }
+
+        body {
+            background: white;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: grey;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgb(239, 118, 34);
+        }
+
+        .video-list {
+            border: none;
+        }
+
+        .video-list .title {
+            font-size: 20px;
+            margin-top: 70px;
+            padding-left: 10px;
+        }
+
+        .vid video {
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            /* box-shadow: 1px 1px 2px rgb(204, 195, 195); */
+        }
+
+        .video-list .vid {
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .video-list .vid:hover {
+            background: rgb(119, 164, 229);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="container-fluid p-3" id="changetext"
+        style="background-color: rgb(119, 164, 229); color: white; font-size: 30px; text-align: center; padding: 10px;">
+    </h3>
+
+    <section class="container-fluid">
+        <div class="video-list d-grid column-gap-5">
+            <div class="vid">
+                <a href="videoshow.html" style="display: flex; text-decoration: none; color: black;" target="_blank">
+                    <video poster="video allbum/even_odd.jfif"
+                        src="video allbum/Program to Check if a Number is Even or Odd ( User Input ).mp4" muted></video>
+                    <h3 class="title">Program to Check if a Number is Even or Odd (User Input).</h3>
+                </a>
+            </div>
+            <div class="vid">
+                <a href="videoshow.html" style="display: flex; text-decoration: none; color: black;" target="_blank">
+                    <video poster="video allbum/sum_twonum.png"
+                        src="video allbum/Sum of Two Numbers Addition of 2 Nums  Python Example Program.mp4"
+                        muted></video>
+                    <h3 class="title">Python Program Sum of Two Numbers Addition of 2 Nums.</h3>
+                </a>
+            </div>
+            <div class="vid">
+                <a href="videoshow.html" style="display: flex; text-decoration: none; color: black;" target="_blank">
+                    <video poster="video allbum/find_large_and_small.jfif"
+                        src="video allbum/Python Program to Find the Largest and Smallest Element Number Present in a List.mp4"
+                        muted></video>
+                    <h3 class="title">Python Program to Find the Largest and Smallest Element Number Present in a List.
+                    </h3>
+                </a>
+            </div>
+            <div class="vid">
+                <a href="videoshow.html" style="display: flex; text-decoration: none; color: black;" target="_blank">
+                    <video poster="video allbum/mul_table.jfif"
+                        src="video allbum/Python Program to Print Multiplication Table of a Number ( User Input ).mp4"
+                        muted></video>
+                    <h3 class="title">Python Program to Print Multiplication Table of a Number ( User Input ).</h3>
+                </a>
+            </div>
+            <div class="vid">
+                <a href="videoshow.html" style="display: flex; text-decoration: none; color: black;" target="_blank">
+                    <video poster="video allbum/find_largest_among_threenum.png"
+                        src="video allbum/Python Example Program to find the Largest among 3 numbers entered by the User.mp4"
+                        muted></video>
+                    <h3 class="title">Python Example Program to find the Largest among 3 numbers entered by the User.
+                    </h3>
+                </a>
+            </div>
+            <div class="vid">
+                <a href="videoshow.html" style="display: flex; text-decoration: none; color: black;" target="_blank">
+                    <video poster="video allbum/area_circle.jfif"
+                        src="video allbum/Python Program to Find the area of a Circle using Radius ( User Input ).mp4"
+                        muted></video>
+                    <h3 class="title">Python Program to Find the area of a Circle using Radius ( User Input ).</h3>
+                </a>
+            </div>
+            <div class="vid">
+                <a href="videoshow.html" style="display: flex; text-decoration: none; color: black;" target="_blank">
+                    <video poster="video allbum/swapnum.jfif"
+                        src="video allbum/Python Program to Swap Two Numbers using third variable.mp4" muted></video>
+                    <h3 class="title">Python Program to Swap Two Numbers using third variable.</h3>
+                </a>
+            </div>
+            <div class="vid">
+                <a href="videoshow.html" style="display: flex; text-decoration: none; color: black;" target="_blank">
+                    <video poster="video allbum/convert_kilotometer.jfif"
+                        src="video allbum/Python Program to Convert Distance from Kilometer to Mile.mp4" muted></video>
+                    <h3 class="title">Python Program to Convert Distance from Kilometer to Mile.</h3>
+                </a>
+            </div>
+            <div class="vid">
+                <a href="videoshow.html" style="display: flex; text-decoration: none; color: black;" target="_blank">
+                    <video poster="video allbum/display_soucecode.jfif"
+                        src="video allbum/Python Program to Display Its Own Source Code as Output Tutorial.mp4"
+                        muted></video>
+                    <h3 class="title">Python Program to Display Its Own Source Code as Output Tutorial.</h3>
+                </a>
+            </div>
+            <div class="vid">
+                <a href="videoshow.html" style="display: flex; text-decoration: none; color: black;" target="_blank">
+                    <video poster="video allbum/area_parimeter.jfif"
+                        src="video allbum/Python Program to Find the Area and Perimeter of a Rectangle _ Tutorial.mp4"
+                        muted></video>
+                    <h3 class="title">Python Program to Find the Area and Perimeter of a Rectangle Tutorial.</h3>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+
+        // Get reference to the text element
+        const text = document.querySelector('#changetext');
+
+        // Get the new text from localStorage
+        const newText = sessionStorage.getItem('newText');
+
+        text.innerText = newText;
+
+        // // Set the text content to the new text, if available
+        // if (newText) {
+        //     text.textContent = newText;
+
+        //     // Remove the new text from localStorage to avoid stale data
+        //     localStorage.removeItem('newText');
+        // }
+    </script>
+</body>
+
+</html>

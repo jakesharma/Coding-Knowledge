@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0px;
+            /* background-image: url("accback.jpg"); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(237, 243, 255);
+        }
+
+        /* header nevigation bar */
+        .logo_image {
+            width: 120px;
+            margin-top: -6px;
+        }
+
+        header {
+            position: sticky;
+            /* z-index: 1;
+    top: 0%; */
+        }
+
+        ul {
+            list-style-type: none;
+            font-size: 25px;
+            height: 60px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(119, 164, 229);
+            display: flex;
+            gap: 20px;
+
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+        }
+
+        .hover_color:hover {
+            color: #444;
+        }
+
+        .rigth_menu_bar {
+            margin-left: 23%;
+        }
+
+        .search {
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            margin-top: 15px;
+            height: 25px;
+            z-index: -1;
+            width: 120%;
+        }
+
+        .search_icon {
+            margin-top: 20px;
+            color: grey;
+        }
+
+        button {
+            background: none;
+            outline: none;
+            border: none;
+            margin-top: 2px;
+            margin-left: -10px;
+        }
+
+        .profile_image {
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border: white solid 5px;
+        }
+
+        .option a {
+
+            background: none;
+            color: black;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header and menu bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html"><img class="logo_image" src="logo.png" alt=""></a></li>
+                <li class="rigth_menu_bar"><a class="hover_color" href="#Home">Home</a></li>
+                <li><a class="hover_color" href="#Features">Features</a></li>
+                <li><a class="hover_color" href="#Tutorial">Tutorial</a></li>
+                <li><a class="hover_color" href="#about">About</a></li>
+                <li><input class="search" type="text" placeholder="Search.."></li>
+                <li><button><i class="fas fa-search search_icon"></i></button></li>
+                <li><a class="hover_color" href="login.html">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div style="text-align: center; color: rgb(119, 164, 229);">
+        <label for="profile"><img id="frame" class="profile_image" src="goku.jpg" alt=""></label>
+        <input style="display: none; text-align: center;" id="profile" type="file" onchange="preview()">
+        <p style="font-size: 20px; text-align: center; margin-top: 1%; color: rgb(119, 164, 229)">Photo</p><br>
+        <hr style="background-color: black;">
+        <!-- For background color -->
+        <!-- <section  style="background-color: rgb(206, 226, 253)"><br> -->
+
+
+        <div class="option" style="margin-bottom: 2%; text-align: center;">
+
+            <!-- Video Edit -->
+            <p style="color: grey; margin-top: 0%;">Video preferences</p>
+            <a href="#">
+                <p>My Video</p>
+            </a>
+            <a href="#">
+                <p>Upload Video</p>
+            </a><br>
+
+            <!-- Account Setting -->
+            <p style="color: grey;">Account Setting</p>
+            <a href="profile.html">
+                <p>Profile Edit</p>
+            </a>
+            <a href="#">
+                <p>Account Delete</p>
+            </a>
+            <a href="home.html">
+                <p>Log Out</p>
+            </a>
+        </div><br>
+        </section>
+
+</body>
+
+</html>

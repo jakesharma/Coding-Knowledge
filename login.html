@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+    <link rel="icon" href="image/icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------For Bootstrap 5.3 CDN Link---------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- ----------For Javascripe 5.3 CDN Link---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- ----------For JQuery.js CDN Link---------- -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <!-- ----------Popper.js CDN Link---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <!-- ----------for Font Awesome---------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+    <style>
+        :root {
+            --lightblue: rgb(119, 164, 229);
+            --lightorange: rgb(239, 118, 34);
+            --lightblack1: #444;
+            --lightblack2: #666;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: inline;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* -----Menu----- */
+        #menu {
+            background-color: var(--lightblue);
+            padding: 0%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: white;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: var(--lightblack1);
+        }
+
+        .navbar-nav .nav-item input {
+            height: 0%;
+            border-radius: 20px;
+            text-align: left;
+            color: var(--lightblack1);
+        }
+
+        form .container {
+            width: 100%;
+        }
+
+        form h1 {
+            font-weight: bold;
+            font-size: 40px;
+            text-shadow: 1px 1px 2px grey;
+        }
+
+        form i {
+            color: var(--lightblue);
+            margin-right: 0.5rem;
+        }
+
+        form input {
+            width: 95%;
+            border: none;
+            border-bottom: 2px solid var(--lightblue);
+            outline: none;
+            background: none;
+            color: gray;
+            font-size: 20px;
+        }
+
+        form input:hover {
+            border-bottom: 2px solid var(--lightblack2);
+        }
+
+        form a {
+            text-decoration: none;
+            color: var(--lightblue);
+            text-align: right;
+        }
+
+        form .row button {
+            width: 100%;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!------------Menu Bar------------>
+    <div class="navbar navbar-expand-xl w-100" id="menu">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="image/logo.png" alt="" width="25%" class="img-fluid"></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-list"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="menu-list">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tutorial">Tutorial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">About</a></li>
+                    <li class="nav-item"><input type="search" placeholder="Search" class="btn btn-light"></li>
+                    <li class="nav-item"><a class="nav-link" href="#login">Log&nbsp;In</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- log in form -->
+
+    <form action="#" class="row w-100 py-5">
+        <div class="col-xl-3">
+
+        </div>
+        <div class="col-xl-6 px-5">
+            <div class="row d-grid row-gap-3">
+                <h1 class="text-center" style="color: var(--lightblue);">Log In</h1>
+                <div class="col-12 d-flex">
+                    <i class="fa-sharp fa-solid fa-user"></i><input type="text" placeholder="Username" required>
+                </div>
+                <div class="col-12 text-end">
+                    <a href="#" class="text-end" style="color: var(--lightblue);">Forgot Username?</a>
+                </div>
+                <div class="col-12 d-flex">
+                    <i class="fa-sharp fa-solid fa-lock"></i><input type="password" placeholder="password" required>
+                </div>
+                <div class="col-12 text-end">
+                    <a href="#" class="text-end" style="color: var(--lightblue);">Forgot Password?</a>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn text-light" style="background-color: var(--lightblue);">LOG
+                        IN</button>
+                </div>
+                <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            </div>
+        </div>
+        <div class="col-xl-3">
+
+        </div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------For Bootstrap 5.3 CDN Link---------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- ----------For Javascripe 5.3 CDN Link---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- ----------For JQuery.js CDN Link---------- -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <!-- ----------Popper.js CDN Link---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <!-- ----------for Font Awesome---------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CodingKnowledge</title>
+    <style>
+        :root {
+            --lightblue: rgb(119, 164, 229);
+            --morelightblue: rgb(237, 243, 255);
+            --lightorange: rgb(239, 118, 34);
+            --lightblack1: #444;
+            --lightblack2: #666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+        }
+
+        body {
+            background: white;
+        }
+
+        .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .container .main-video {
+            background: rgb(237, 243, 255);
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .container .main-video video {
+            width: 850px;
+        }
+
+        .container .main-video .title {
+            color: black;
+            font-size: 20px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+
+        .container .video-list {
+            background: rgb(237, 243, 255);
+            border-radius: 5px;
+            height: 650px;
+            overflow: scroll;
+        }
+
+        .container .video-list .title {
+            font-size: 10px;
+        }
+
+        .container .video-list::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .container .video-list::-webkit-scrollbar-track {
+            background-color: none;
+            border-radius: 50px;
+        }
+
+        .container .video-list::-webkit-scrollbar-thumb {
+            background: rgb(239, 118, 34);
+            border-radius: 50px;
+        }
+
+        .container .video-list .vid video {
+            width: 100px;
+            border-radius: 5px;
+        }
+
+        .container .video-list .vid {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: white;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            cursor: pointer;
+        }
+
+        .container .video-list .vid:hover {
+            background: rgb(239, 118, 34);
+        }
+
+        .header{
+            background-color: var(--lightblue);
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="">
+
+    <h3 class="header fs-4 text-center p-3">
+        My Video</h3>
+
+    <div class="container">
+        <div class="main-video">
+            <div class="video">
+                <video src="Program to Check if a Number is Even or Odd ( User Input ).mp4" controls muted
+                    autoplay></video>
+                <h3 class="title">Program to Check if a Number is Even or Odd (User Input)</h3>
+            </div>
+        </div>
+
+
+        <div class="video-list">
+            <div class="vid active">
+                <video src="Sum of Two Numbers Addition of 2 Nums  Python Example Program.mp4" muted></video>
+                <h3 class="title">Python Program Sum of Two Numbers Addition of 2 Nums</h3>
+            </div>
+            <div class="vid">
+                <video src="Python Program to Find the Largest and Smallest Element Number Present in a List.mp4"
+                    muted></video>
+                <h3 class="title">Python Program to Find the Largest and Smallest Element Number Present in a List</h3>
+            </div>
+            <div class="vid">
+                <video src="Python Program to Print Multiplication Table of a Number ( User Input ).mp4" muted></video>
+                <h3 class="title">Python Program to Print Multiplication Table of a Number ( User Input )</h3>
+            </div>
+            <div class="vid">
+                <video src="Python Example Program to find the Largest among 3 numbers entered by the User.mp4"
+                    muted></video>
+                <h3 class="title">Python Example Program to find the Largest among 3 numbers entered by the User</h3>
+            </div>
+            <div class="vid">
+                <video src="Python Program to Find the area of a Circle using Radius ( User Input ).mp4" muted></video>
+                <h3 class="title">Python Program to Find the area of a Circle using Radius ( User Input )</h3>
+            </div>
+            <div class="vid">
+                <video src="Python Program to Swap Two Numbers using third variable.mp4" muted></video>
+                <h3 class="title">Python Program to Swap Two Numbers using third variable</h3>
+                <!-- <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe> -->
+            </div>
+            <div class="vid">
+                <video src="Python Program to Convert Distance from Kilometer to Mile.mp4" muted></video>
+                <h3 class="title">Python Program to Convert Distance from Kilometer to Mile</h3>
+            </div>
+            <div class="vid">
+                <video src="Python Program to Display Its Own Source Code as Output Tutorial.mp4" muted></video>
+                <h3 class="title">Python Program to Display Its Own Source Code as Output Tutorial</h3>
+            </div>
+            <div class="vid">
+                <video src="Python Program to Find the Area and Perimeter of a Rectangle _ Tutorial.mp4" muted></video>
+                <h3 class="title">Python Program to Find the Area and Perimeter of a Rectangle Tutorial</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        let mainVideo = document.querySelector('.main-video video');
+        let title = document.querySelector('.main-video .title');
+
+        listVideo.forEach(video =>{
+            video.onclick = () =>{
+                 listVideo.forEach(vid => vid.classList.remove('active'));
+                 video.classList.add('active');
+                 if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+                 };
+            };
+        });
+    </script> -->
+</body>
+
+</html>
